@@ -1,0 +1,16 @@
+<div id="container">
+	
+    <div class="smallBox" id:"listeFilmes">
+    	<ul>
+    		<li ng-repeat="film in exo03.films">
+    			<img src="{{film.img}}" ng-click="exo03.select($index)" ng-class = "{ 'border-green': exo03.selectedElement.name === film.name}" >
+    		</li>
+    	</ul>
+    </div> 
+    <div class="smallBox" id:"detailFilm" >
+	
+      <div>
+        <ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
+      </div>
+    </div>
+</div>
