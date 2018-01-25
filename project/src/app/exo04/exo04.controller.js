@@ -8,11 +8,11 @@ function  Exo04Ctrl($location, settingService) {
     vm.consol = consol;
 
 
- function consol(input){
- 	vm.superService.City = input;
- 	console.log(vm.superService.City);
- }  
+    function consol(input){
+      vm.superService.City = input;
+      console.log(vm.superService.City);
     }
+}
 
 
 	
